@@ -12,42 +12,38 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href=""><img src="logo/tem_saida.jpg" alt="tem saida" width="25%">
-        </a>
-      </div>
-      <div id="navbar2" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown
-              <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=""><img src="logo/tem_saida.jpg" alt="tem saida" width="25%">
+            </a>
+          </div>
+          <div id="navbar2" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Cadastrar Participante</a></li>
+              <li><a href="participantes.html">Lista de Participantes</a></li>
+              <li><a href="#">Cursos</a></li>                     
+              <li><a href="#">Apoio Psicologico</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Olá Nubia
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Editar conta</a></li>
+                    <li><a href="#">Sair</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-    <!--/.container-fluid -->
-  </nav>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+      </nav>
   <!-- MultiStep Form -->
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
@@ -63,62 +59,79 @@
         <fieldset>
           <h2 class="fs-title">Dados cadastrais</h2>
           <div class="col-md-12">
+            <label for="nome">Nome Completo</label>
             <input type="text" id="nome" name="fname" placeholder="Nome Completo" />
           </div>
           <div class="col-md-6">
+            <label for="nome">CPF</label>
             <input type="text" name="cpf" placeholder="CPF" />
           </div>
           <div class="col-md-6">
+              <label for="nome">Data de Nascimento</label>
             <input type="date" name="datanasc" placeholder="Data de Nascimento" />
           </div>
           <div class="col-md-12">
+              <label for="nome">Endereço</label>
             <input type="text" name="endereco" placeholder="Endereço" />
           </div>
 
           <div class="col-md-8">
+              <label for="nome">Bairro</label>
             <input type="text" name="bairro" placeholder="Bairro" />
           </div>
           <div class="col-md-4">
-            <input type="number" name="bairro" placeholder="numero" />
+              <label for="nome">Numero</label>
+            <input type="number" name="number" placeholder="numero" />
           </div>
           <div class="col-md-4">
+              <label for="nome">CEP</label>
             <input type="text" name="cep" placeholder="CEP" />
           </div>
+              <div class="col-md-4">
+                  <label for="nome">Estado</label>
+                  <input type="nome" name="estado" placeholder="Estado" />
+              </div>
           <div class="col-md-4">
-            <input type="text" name="cidade" placeholder="Cidade" />
+              <label for="nome">Cidade</label>
+              <input type="nome" name="cidade" placeholder="Cidade" />
           </div>
-
-          <div class="col-md-4">
-            <input type="text" name="estado" placeholder="Estado" />
-          </div>
-
           <div class="col-md-6">
+              <label for="nome">Telefone</label>
             <input type="phone" name="telefone" placeholder="Telefone" />
           </div>
           <div class="col-md-6">
+              <label for="nome">Celular</label>
             <input type="phone" name="celular" placeholder="Celular" />
           </div>
           <div class="col-md-4">
-            <input type="number" name="noficio" placeholder="Numero do oficio" />
+              <label for="nome">Número do ofício</label>
+            <input type="number" name="noficio" placeholder="Número do ofício" />
           </div>
           <div class="col-md-4">
-            <input type="text" name="orgaooficio" placeholder="Orgao do oficio" />
+              <label for="nome">Orgão do ofício</label>
+              <input type="number" name="orficio" placeholder="Orgão do ofício" />
           </div>
           <div class="col-md-4">
+              <label for="nome">Data do ofício</label>
             <input type="date" name="dataoficio" />
           </div>
-
+          
+         
           <input type="button" name="next" class="next action-button" value="Próximo" />
+          
         </fieldset>
         <fieldset>
           <h2 class="fs-title">Dados Pessoais</h2>
           <div class="col-md-4">
+              <label for="nome">Número de filhos</label>
             <input type="text" name="filhos" placeholder="Numero de filhos" />
           </div>
           <div class="col-md-4">
+              <label for="nome">Melhor horário de contato</label>
             <input type="text" name="horario" placeholder="Melhor horário de contato" />
           </div>
           <div class="col-md-4">
+              <label for="nome">Em situação de risco?</label>
             <input type="text" name="risco" placeholder="Em situação de risco?" />
           </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Voltar" />
@@ -128,32 +141,40 @@
 
           <h2 class="fs-title">Dados profissionais</h2>
           <div class="col-md-8">
+              <label for="nome">Nivel de Escolaridade</label>
             <input type="text" name="escolaridade" placeholder="Nivel de Escolaridade" />
           </div>
           <div class="col-md-4">
+              <label for="nome">Curso</label>
             <input type="text" name="curso" placeholder="Curso" />
           </div>
           <div class="col-md-4">
+              <label for="nome">Cargo</label>
             <input type="text" name="cargo" placeholder="Cargo" />
           </div>
           <div class="col-md-4">
+              <label for="nome">Empresa</label>
             <input type="text" name="empresa" placeholder="Empresa" />
           </div>
           <div class="col-md-2">
+              <label for="nome">Trabalhei de:</label>
             <input type="date" name="trabalheide" />
           </div>
           <div class="col-md-2">
+              <label for="nome">Até:</label>
             <input type="date" name="trabalheiate" />
           </div>
           <div class="col-md-8">
+              <label for="nome">Objetivo</label>
             <input type="text" name="objcargo" placeholder="Cargo" />
           </div>
           <div class="col-md-4">
+              <label for="nome">Carga Horária</label>
             <input type="text" name="objhorario" placeholder="Carga horária" />
           </div>
           <input type="button" name="previous" class="previous action-button-previous" value="Voltar" />
-          <a href="empregos.html"><input type="submit" name="submit" class="submit action-button"
-              value="Cadastrar" /></a>
+          <input onClick="window.location.href='empregos.html'" type="submit" name="submit" class="submit action-button"
+              value="Cadastrar" />
         </fieldset>
       </form>
 

@@ -20,6 +20,10 @@ body {
     background: transparent;
 }
 
+.navbar-nav li a {
+    font-size: 10px;
+}
+
 /*form styles*/
 #msform {
     text-align: center;
@@ -27,8 +31,11 @@ body {
     margin-top: 30px;
 }
 
-label{
-    text-align: left;
+fieldset label{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    /* text-align: left; */
 }
 
 #msform fieldset {
@@ -234,6 +241,19 @@ label{
     background: #ee0979;
     font-weight: bold;
     color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    font-size: 10px;
+}
+
+.btn-branco {
+    width: 100px;
+    background: #fff;
+    font-weight: bold;
+    color: #ee0979;
     border: 0 none;
     border-radius: 25px;
     cursor: pointer;
