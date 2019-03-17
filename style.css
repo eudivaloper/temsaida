@@ -184,6 +184,17 @@ body {
     margin-top: 30px;
     text-align: center;
 }
+.dme_link2 a{
+    margin-top: 30px;
+    background: #FFF;
+    font-weight: bold;
+    color: #ee0979;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px 25px;
+    font-size: 12px;
+}
 .dme_link a {
     background: #FFF;
     font-weight: bold;
@@ -206,13 +217,24 @@ body {
 }
 
 .btn-roxo{
-    background: transparent;
-    border-color: #6441A5;
-    color: #6441A5;
+    width: 100px;
+    background: #ee0979;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    font-size: 10px;
 }
 
 h1 {
     font-size: 20px;
+    color:#fff;
+}
+
+.pdetal{
     color:#fff;
 }
 
