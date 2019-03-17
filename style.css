@@ -200,7 +200,36 @@ body {
     text-decoration: none;
 }
 
+
 .navbar{
     background-color: rgb(255, 255, 255);
 }
 
+.btn-roxo{
+    background: transparent;
+    border-color: #6441A5;
+    color: #6441A5;
+}
+
+h1 {
+    font-size: 20px;
+    color:#fff;
+}
+
+.row {
+   margin-right: 0px;
+   margin-left: 0px; 
+}
+
+.box{
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
