@@ -1,116 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Sem Saída</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Tem Saída</title>
 </head>
+
 <body>
-    <!-- MultiStep Form -->
-      <div class="container example2">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href=""><img src="logo/tem_saida.jpg" alt="tem saida" width="25%">
-            </a>
-          </div>
-          <div id="navbar2" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href=""><img src="logo/tem_saida.jpg" alt="tem saida" width="25%">
+        </a>
+      </div>
+      <div id="navbar2" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
             </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+  <!-- MultiStep Form -->
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1>Faça seu cadastro</h1>
+      <form id="msform">
+        <!-- progressbar -->
+        <ul id="progressbar">
+          <li class="active">Dados cadastrais</li>
+          <li>Dados pessoais</li>
+          <li>Dados profissionais</li>
+        </ul>
+        <!-- fieldsets -->
+        <fieldset>
+          <h2 class="fs-title">Dados cadastrais</h2>
+          <div class="col-md-12">
+            <input type="text" id="nome" name="fname" placeholder="Nome Completo" />
           </div>
-          <!--/.nav-collapse -->
-        </div>
-        <!--/.container-fluid -->
-      </nav>
+          <div class="col-md-6">
+            <input type="text" name="cpf" placeholder="CPF" />
+          </div>
+          <div class="col-md-6">
+            <input type="date" name="datanasc" placeholder="Data de Nascimento" />
+          </div>
+          <div class="col-md-12">
+            <input type="text" name="endereco" placeholder="Endereço" />
+          </div>
+
+          <div class="col-md-8">
+            <input type="text" name="bairro" placeholder="Bairro" />
+          </div>
+          <div class="col-md-4">
+            <input type="number" name="bairro" placeholder="numero" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="cep" placeholder="CEP" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="cidade" placeholder="Cidade" />
+          </div>
+
+          <div class="col-md-4">
+            <input type="text" name="estado" placeholder="Estado" />
+          </div>
+
+          <div class="col-md-6">
+            <input type="phone" name="telefone" placeholder="Telefone" />
+          </div>
+          <div class="col-md-6">
+            <input type="phone" name="celular" placeholder="Celular" />
+          </div>
+          <div class="col-md-4">
+            <input type="number" name="noficio" placeholder="Numero do oficio" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="orgaooficio" placeholder="Orgao do oficio" />
+          </div>
+          <div class="col-md-4">
+            <input type="date" name="dataoficio" />
+          </div>
+
+          <input type="button" name="next" class="next action-button" value="Próximo" />
+        </fieldset>
+        <fieldset>
+          <h2 class="fs-title">Dados Pessoais</h2>
+          <div class="col-md-4">
+            <input type="text" name="filhos" placeholder="Numero de filhos" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="horario" placeholder="Melhor horário de contato" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="risco" placeholder="Em situação de risco?" />
+          </div>
+          <input type="button" name="previous" class="previous action-button-previous" value="Voltar" />
+          <input type="button" name="next" class="next action-button" value="Próximo" />
+        </fieldset>
+        <fieldset>
+
+          <h2 class="fs-title">Dados profissionais</h2>
+          <div class="col-md-8">
+            <input type="text" name="escolaridade" placeholder="Nivel de Escolaridade" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="curso" placeholder="Curso" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="cargo" placeholder="Cargo" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="empresa" placeholder="Empresa" />
+          </div>
+          <div class="col-md-2">
+            <input type="date" name="trabalheide" />
+          </div>
+          <div class="col-md-2">
+            <input type="date" name="trabalheiate" />
+          </div>
+          <div class="col-md-8">
+            <input type="text" name="objcargo" placeholder="Cargo" />
+          </div>
+          <div class="col-md-4">
+            <input type="text" name="objhorario" placeholder="Carga horária" />
+          </div>
+          <input type="button" name="previous" class="previous action-button-previous" value="Voltar" />
+          <a href="empregos.html"><input type="submit" name="submit" class="submit action-button"
+              value="Cadastrar" /></a>
+        </fieldset>
+      </form>
+
     </div>
-    
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
-        <form id="msform">
-            <!-- progressbar -->
-            <ul id="progressbar">
-                <li class="active">Dados Cadastrais</li>
-                <li>Dados Pessoais</li>
-                <li>Dados Profissionais</li>
-            </ul>
-            <!-- fieldsets -->
-            <fieldset>
-                <h2 class="fs-title">Dados Cadastrais</h2>
+  </div>
+  <!-- /.MultiStep Form -->
 
-                <h3 class="fs-subtitle">Preencha Todos os Dados para seguir com o Cadastro</h3>
-                <input type="text" name="fname" placeholder="Nome Completo"/>
-                <input type="text" name="cpf" placeholder="CPF"/>
-                <input type="text" name="datanasc" placeholder="Data de Nascimento"/>
-                <input type="text" name="noficio" placeholder="Número do Ofício"/>
-                <input type="text" name="oroficio" placeholder="Órgão do Ofício"/>
-                <input type="text" name="dtoficio" placeholder="Data do Ofício"/>
-                <input type="text" name="cep" placeholder="CEP"/>
-                <input type="text" name="cidade" placeholder="Cidade"/>
-                <input type="text" name="bairro" placeholder="Bairro"/>
-                <input type="text" name="estado" placeholder="Estado"/>
-                <input type="text" name="endereco" placeholder="Endereço"/>
-                <input type="text" name="telefone" placeholder="Telefone"/>
-                <input type="text" name="celular" placeholder="Celular"/>
-
-                <input type="button" name="next" class="next action-button" value="Próximo"/>
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Dados Pessoais</h2>
-                <h3 class="fs-subtitle">Your presence on the social network</h3>
-                <input type="text" name="twitter" placeholder="Numero do oficio"/>
-                <input type="text" name="facebook" placeholder="Data do oficio"/>
-                <input type="text" name="gplus" placeholder="Orgão de oficio"/>
-                <input type="button" name="previous" class="previous action-button-previous" value="Voltar"/>
-                <input type="button" name="next" class="next action-button" value="Próximo"/>
-            </fieldset>
-
-            <fieldset>Dados Profissionais</h2>
-
-                <h3 class="fs-subtitle">Fill in your credentials</h3>
-                <input type="text" name="email" placeholder="Escolaridade"/>
-                <input type="password" name="pass" placeholder="Curso"/>
-                <input type="password" name="cpass" placeholder="Confirm Password"/>
-                <input type="button" name="previous" class="previous action-button-previous" value="Voltar"/>
-                <input type="submit" name="submit" class="submit action-button" value="Cadastrar"/>
-            </fieldset>
-        </form>
-        <!-- link to designify.me code snippets -->
-        <div class="dme_link">
-            <p><a href="http://designify.me/code-snippets-js/" target="_blank">More Code Snippets</a></p>
-        </div>
-        <!-- /.link to designify.me code snippets -->
-    </div>
-</div>
-<!-- /.MultiStep Form -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
